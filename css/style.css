@@ -1,0 +1,126 @@
+.hidden{
+    display:none;
+}
+
+body{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing:border-box;
+}
+
+img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+    opacity:0.8;
+}
+
+#clock{
+    padding:20px;
+    font-size:50px;
+}
+
+#greetings{
+    font-family: 'Open Sans', sans-serif;
+    font-size:50px;
+}
+
+#greetings,
+#login-form{
+    margin-top:100px;
+}
+
+#login-form input{
+    border-radius: 7px;
+    border:none;
+}
+
+#login-form input:first-child{
+    width:200px;
+    height:25px;
+}
+
+#login-form input:last-child{
+    height:25px;
+    cursor:pointer;
+}
+
+.form{
+    position:absolute;
+    bottom:0;
+    margin-right:50px;
+    margin-bottom:20px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#todo-form input{
+    border:none;
+    border-radius:7px;
+    border-bottom:1px solid gray;
+    margin-bottom:5px;
+}
+
+#todo-list{
+    background-color: rgba(1,1,1,0.3);
+    width:11%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-list li{
+    margin:5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#todo-list span{
+    color:rgb(228, 211, 211);
+    margin-right:6px;
+}
+
+#todo-list button{
+    cursor:pointer;
+    border-radius:50%;
+    border:none;
+}
+
+@keyframes buttonspin{
+    from{
+        transform:none;
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
+
+#todo-list button:hover{
+    animation:buttonspin 1s ease-in-out infinite;
+}
+
+#quote{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quote span{
+    font-family: 'The Nautigal', cursive;
+    font-size:50px;
+}
+
